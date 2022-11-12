@@ -7,9 +7,11 @@ Tracking expenses daily can really help to save a lot of money. Once they  start
 This website will be able to generate their expenses and saving reports as time duration they selected.
 
 #**Objective:**
+
 To keep track of daily expenses and budgeting.
 Users don't need to calculate on their  own and  they don't need to have a manual budget plan.           
 
 #**Scope:**
+
 This application can have a good market as it is usable by anyone who is willing to manage their expenses and aims to save for future investments and many more.
 There is no any range criteria or any kind of profession or gender that is focused, that this website  will be used hugely.
