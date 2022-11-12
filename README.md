@@ -6,7 +6,7 @@ Quicken and Microsoft money  were the  first desktop applications developed deca
 Tracking expenses daily can really help to save a lot of money. Once they  start off by tracking their expenses each day, they will be able to get a better idea where they are spending their money, so they can stay in control and achieve their goal.
 This website will be able to generate their expenses and saving reports as time duration they selected.
 
-#**Objective: **
+#**Objective:**
 To keep track of daily expenses and budgeting.
 Users don't need to calculate on their  own and  they don't need to have a manual budget plan.           
 
