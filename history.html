@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>History</title>
+</head>
+
+<body>
+    <style>
+        .icon {
+            width: 100px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo {
+            color: #2600ffb6;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+            margin-top: 5px
+        }
+
+        .form {
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+            float: center;
+            margin-top: 30px;
+            margin-left: 50px;;
+            transform: translate(0%, -5%);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .form h2 {
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #f4ecec;
+            font-size: 22px;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input {
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #00c3ff;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .btnn {
+            width: 240px;
+            height: 40px;
+            background: #00aeff;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+        }
+
+        .btnn:hover {
+            background: #fff;
+            color: #1100ff;
+        }
+
+        .btnn a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+    <div class="main">
+        <div class="icon">
+            <img src="mmlogo.png">
+        </div>
+        <div class="form">
+            <form name="f1" action="" onsubmit="return validation()" method="POST">
+                <input type="accno" id="accno" name="accno" placeholder="Enter Accno Here">
+                <input type="password" id="pass" name="pass" placeholder="Enter Password Here">
+                <button class="btnn" id="btn"><a href="database.php">Submit</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
