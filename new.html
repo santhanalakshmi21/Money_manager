@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-image: url("https://thumbs.dreamstime.com/b/indian-money-banknotes-rupees-background-paper-136862130.jpg");
+			font-family: Verdana;
+			text-align: center;
+
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		.icon {
+			width: 100px;
+			float: left;
+			margin-left: 10px;
+			margin-top: -15px;
+			height: 50px;
+		}
+
+		.btn {
+			margin-top: -40px;
+			float: right;
+			padding-right: 10px;
+		}
+
+		.btn button {
+			padding: 5px;
+			background-color: rgb(30, 210, 138);
+			font-weight: bold;
+			font-size: medium;
+		}
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+	padding-right: 10px;
+	margin-top: -20px;
+}
+
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+	font-family: Verdana;
+    font-weight:bolder;
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #f1faf5;
+	background-color: rgb(17, 18, 18);
+}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="icon">
+			<img src="mmlogo.png">
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="transcation.php">Transcation History</a></li>
+				<li><a href="dashboard1.php">Dashboard</a></li>
+			</ul>
+		</div>
+	</div>
+	<h1>Information</h1>
+	
+	<!-- Create Form -->
+	<form id="form" action="information.php" method="post">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name" > 
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="name" name="Name" placeholder="Enter your name" required="required"/>
+		</div>
+
+		<div class="form-control">
+			<label for="Phone" id="label-Phone">
+				Phone No.
+			</label>
+
+			<!-- Input Type Phone-->
+			<input type="Phone" id="Phone" name="Phoneno" placeholder="Enter your Phone No."  required="required"/>
+		</div>
+
+		<div class="form-control">
+			<label for="Branch" id="label-Branch">
+				Bank Acc no:
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="Branch" name="Bank_accno" placeholder="Enter your Account No." required="required" />
+		</div>
+
+		<div class="form-control">
+			<label for="Income" id="label-Income">
+				Income:
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="Income" name="income" placeholder="Enter your  Annual Income"required="required" />
+		</div>
+		<div class="form-control">
+			<label for="Amount" id="label-Amount">
+				Target Savings:
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="Amount" name="target_savings" placeholder="Enter Target amount" required="required" />
+		</div>
+		<div class="form-control">
+			<label>Target Period:
+			</label>
+			<input type="text" id="target_period" name="target_period" placeholder="Enter Target Period" required="required" />
+		</div>
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
